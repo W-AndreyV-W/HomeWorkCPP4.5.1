@@ -2,18 +2,16 @@
 #include <vector>
 #include <cmath>
 
-template <class T> T square(T& num) {
+template <class T> void square(T& num) {
 
     num = static_cast<T>(pow(static_cast<long double>(num), 2.0));
-    return 0;
 }
 
-template <class T> T square(std::vector<T>& arr) {
+template <class T> void square(std::vector<T>& arr) {
 
     for (int i = 0; i < arr.size(); i++) {
         arr[i] = static_cast<T>(pow(static_cast<long double>(arr[i]), 2.0));
     }
-    return 0;
 }
 
 int main()
